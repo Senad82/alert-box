@@ -1,0 +1,63 @@
+/* global style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 47%;
+}
+.button {
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn-title,
+.button {
+  padding: 20px;
+}
+
+.red {
+  background: red;
+  color: aliceblue;
+}
+.green {
+  background: green;
+  color: aliceblue;
+}
+
+/* alert class */
+.alert {
+  text-align: center;
+  color: black;
+  animation: blink 1s linear infinite;
+}
+/* alert class message   */
+.alert p {
+  margin-top: 5rem;
+  font-size: 10rem;
+  animation: blinkfont 1s linear infinite;
+}
+
+/* Animation for background color */
+@keyframes blink {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: white;
+  }
+}
+
+/* Animation for font */
+@keyframes blinkfont {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
